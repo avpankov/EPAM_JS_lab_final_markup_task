@@ -1,7 +1,7 @@
 @import "../abstract/mixins";
 
 .header {
-    background-image: url(../../images/Layer\ 4.png);
+    background-image: url(../../images/Layer_4.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -15,6 +15,7 @@
 
     a {
         @include text ($headings-font, $color-text, 18px);
+        font-weight: 700;
         text-decoration: none;
     }
 
@@ -35,6 +36,7 @@
     
     p {
         @include headings ($headings-font, $color-text, 14px);
+        font-weight: 700;
         margin-top: 18px;
     }
 }

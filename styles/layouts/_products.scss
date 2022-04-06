@@ -1,7 +1,7 @@
 @import "../abstract/mixins";
 @import "../abstract/variables";
 @import "../layouts/intro";
-
+@import "../components/list-icon";
 .products {
     padding: 45px 0;
 }
@@ -29,4 +29,8 @@
     p {
         margin-top: -8px;
     }
+}
+
+.column {
+    margin-top: 20px;
 }

@@ -2,10 +2,16 @@
 
 .button {
     width: 136px;
-    height: 51px;
+    height: 50px;
     text-align: center;
     vertical-align: middle;
     background-color: $color-brand;
     border: none;
+    transition: all .3s;
     @include headings ($headings-font, $color-additional, 14px, 400);
+}
+
+.button:hover {
+    box-shadow: 0 0 10px $color-shadow;
+    cursor: pointer;
 }

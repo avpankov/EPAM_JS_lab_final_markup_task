@@ -1,0 +1,18 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+.price-tag {
+    width: 360px;
+    height: 485px;
+}
+
+.monthly-payment {
+    display: inline-block;
+    width: 165px;
+    text-align: center;
+    padding: 7px 0;
+    text-transform: uppercase;
+    background-color:  $color-brand;
+    
+}
+

@@ -1,0 +1,40 @@
+@import "../abstract/mixins";
+
+.header {
+    background-image: url(../../images/Layer\ 4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header__wrapper {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        @include text ($headings-font, $color-text, 18px);
+        text-decoration: none;
+    }
+
+    .hamburger-menu {
+        
+        img {
+            margin-top: 5px;
+        }
+    }
+}
+
+.promo__content {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    p {
+        @include headings ($headings-font, $color-text, 14px);
+        margin-top: 18px;
+    }
+}

@@ -1,0 +1,11 @@
+@import "../abstract/variables";
+
+.button {
+    width: 136px;
+    height: 51px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: $color-brand;
+    border: none;
+    @include headings ($headings-font, $color-additional, 14px, 400);
+}

@@ -1,0 +1,26 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+@import "./intro";
+@import "../components/price-tag";
+@import "../components/buttons";
+
+.pricing-plans {
+    padding: 45px 0;
+}
+
+.pricing-plans-intro {
+    @include intro;
+
+    h2 {
+        position: relative;
+    }
+    h2::after {
+        @include icon-rectangle;
+    } 
+
+    p {
+        margin-top: 15px;
+        line-height: 24px;
+    }
+}
+

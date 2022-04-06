@@ -1,0 +1,32 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+@import "../layouts/intro";
+
+.products {
+    padding: 45px 0;
+}
+
+.products-intro {
+    @include intro;
+
+    h2 {
+        position: relative;
+    }
+    h2::after {
+        @include icon-rectangle;
+
+    }  
+
+    p {
+        margin-top: 15px;
+        line-height: 24px;
+    }
+}
+
+.advantages {
+    line-height: 30px;
+
+    p {
+        margin-top: -8px;
+    }
+}

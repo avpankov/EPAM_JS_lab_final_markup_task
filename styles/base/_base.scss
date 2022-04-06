@@ -1,0 +1,31 @@
+@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+
+body {
+    @include text ($text-font, $color-text);
+
+    
+}
+
+h1 {
+    @include headings ($headings-font, $color-text, 36px);
+}
+
+h2 {
+    @include headings ($headings-font, $color-text, 30px);
+}
+
+h3 {
+    @include headings ($headings-font, $color-text, 24px);
+}
+
+h4 {
+    @include headings ($headings-font, $color-text, 18px);
+}
+
+h5 {
+    @include headings ($headings-font, $color-additional, 14px);
+}

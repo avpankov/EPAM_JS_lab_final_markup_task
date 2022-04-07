@@ -1,7 +1,7 @@
 @import "../abstract/mixins";
 
 .layout-2-column {
-    @include columns ($width: 49%)
+    @include columns ($width: 48.5%)
 }
 
 .layout-4-column {
@@ -9,5 +9,5 @@
 }
 
 .layout-3-column {
-    @include columns ($width: 31%)
+    @include columns ($width: 31.5%)
 }

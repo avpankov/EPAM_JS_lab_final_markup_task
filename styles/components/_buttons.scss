@@ -8,10 +8,20 @@
     background-color: $color-brand;
     border: none;
     transition: all .3s;
-    @include headings ($headings-font, $color-additional, 14px, 400);
+    @include headings ($headings-font, $color-additional, 14px, 700);
 }
 
 .button:hover {
     box-shadow: 0 0 10px $color-shadow;
     cursor: pointer;
+}
+
+.button_transparent {
+    width: 165px;
+    color: $color-brand;
+    background-color: $color-additional;
+}
+
+.button_transparent:hover {
+    box-shadow: 0 0 10px $color-additional;
 }

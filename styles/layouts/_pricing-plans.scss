@@ -5,15 +5,16 @@
 @import "../components/buttons";
 
 .pricing-plans {
-    padding: 45px 0;
+    padding: 45px 0 156px;
 }
 
-.pricing-plans-intro {
+.pricing-plans__intro {
     @include intro;
 
     h2 {
         position: relative;
     }
+    
     h2::after {
         @include icon-rectangle;
     } 

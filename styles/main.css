@@ -460,6 +460,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   color: #60606E;
   font-size: 36px;
+  font-weight: 700;
   text-transform: uppercase;
   margin: 0;
 }
@@ -468,6 +469,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   color: #60606E;
   font-size: 30px;
+  font-weight: 700;
   text-transform: uppercase;
   margin: 0;
 }
@@ -476,6 +478,7 @@ h3 {
   font-family: "Montserrat", sans-serif;
   color: #60606E;
   font-size: 24px;
+  font-weight: 700;
   text-transform: uppercase;
   margin: 0;
 }
@@ -484,6 +487,7 @@ h4 {
   font-family: "Montserrat", sans-serif;
   color: #60606E;
   font-size: 18px;
+  font-weight: 700;
   text-transform: uppercase;
   margin: 0;
 }
@@ -492,6 +496,7 @@ h5 {
   font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 14px;
+  font-weight: 700;
   text-transform: uppercase;
   margin: 0;
 }
@@ -501,10 +506,18 @@ h5 {
   margin: auto;
 }
 
+.hamburger-menu {
+  cursor: pointer;
+}
+.hamburger-menu img {
+  margin-top: 5px;
+}
+
 .header {
-  background-image: url(../../images/Layer_4.png);
+  background-image: url(../../images/backgrounds/top.png);
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 101px;
 }
 
 .header__wrapper {
@@ -522,9 +535,6 @@ h5 {
   font-weight: 700;
   text-decoration: none;
 }
-.header__wrapper .hamburger-menu img {
-  margin-top: 5px;
-}
 
 .promo__content {
   height: 400px;
@@ -537,10 +547,22 @@ h5 {
   font-family: "Montserrat", sans-serif;
   color: #60606E;
   font-size: 14px;
+  font-weight: 700;
   text-transform: uppercase;
   margin: 0;
   font-weight: 700;
   margin-top: 18px;
+}
+
+.intro {
+  width: 721px;
+  margin: 0 auto 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: center;
 }
 
 /*!
@@ -8755,27 +8777,17 @@ readers do not read off random characters that represent icons */
 
 .fa-square-check {
   color: #7beec7;
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .products {
   padding: 45px 0;
 }
 
-.products-intro {
-  width: 721px;
-  margin: 100px auto 82px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-align: center;
-}
-.products-intro h2 {
+.intro h2 {
   position: relative;
 }
-.products-intro h2::after {
+.intro h2::after {
   content: "";
   position: absolute;
   top: 0%;
@@ -8787,20 +8799,21 @@ readers do not read off random characters that represent icons */
   background-color: #7beec7;
   z-index: -1;
 }
-.products-intro p {
+.intro p {
   margin-top: 15px;
   line-height: 24px;
 }
 
-.advantages {
+.products__description {
   line-height: 30px;
 }
-.advantages p {
+.products__description p {
   margin-top: -8px;
 }
 
-.column {
-  margin-top: 20px;
+.products__description__column {
+  margin-top: 27px;
+  line-height: 24px;
 }
 
 .layout-2-column {
@@ -8809,7 +8822,7 @@ readers do not read off random characters that represent icons */
   justify-content: space-between;
 }
 .layout-2-column > * {
-  flex-basis: 49%;
+  flex-basis: 48.5%;
 }
 
 .layout-4-column {
@@ -8827,7 +8840,7 @@ readers do not read off random characters that represent icons */
   justify-content: space-between;
 }
 .layout-3-column > * {
-  flex-basis: 31%;
+  flex-basis: 31.5%;
 }
 
 .tool__icon {
@@ -8836,6 +8849,24 @@ readers do not read off random characters that represent icons */
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.tool__icon .icon {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(0, 75%);
+  display: inline-block;
+  width: 68px;
+  height: 22px;
+  background-color: #7beec7;
+  z-index: -1;
+  width: 51px;
+  height: 21px;
+  top: 55%;
+  left: -3%;
+  transform: translate(0, 0);
 }
 
 .tool {
@@ -8854,10 +8885,22 @@ readers do not read off random characters that represent icons */
 }
 
 .tools {
-  padding: 100px 0;
+  padding: 106px 0 94px;
+}
+
+.intro {
+  width: 721px;
+  margin: 0 auto 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: center;
 }
 
 .price-tag {
+  box-sizing: border-box;
   width: 360px;
   height: 485px;
   position: relative;
@@ -8884,7 +8927,7 @@ readers do not read off random characters that represent icons */
 }
 
 .container {
-  padding: 30px;
+  padding: 25px 30px 27px;
 }
 
 .monthly-payment {
@@ -8894,12 +8937,12 @@ readers do not read off random characters that represent icons */
   padding: 7px 0;
   text-transform: uppercase;
   background-color: #7beec7;
-  margin-top: 17px;
+  margin-top: 12px;
 }
 
 .list-of-items {
-  margin: 45px 0;
-  line-height: 24px;
+  margin: 44px 0 48px;
+  line-height: 22px;
 }
 
 .button {
@@ -8913,6 +8956,7 @@ readers do not read off random characters that represent icons */
   font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 14px;
+  font-weight: 700;
   text-transform: uppercase;
   margin: 0;
 }
@@ -8922,13 +8966,23 @@ readers do not read off random characters that represent icons */
   cursor: pointer;
 }
 
-.pricing-plans {
-  padding: 45px 0;
+.button_transparent {
+  width: 165px;
+  color: #7beec7;
+  background-color: white;
 }
 
-.pricing-plans-intro {
+.button_transparent:hover {
+  box-shadow: 0 0 10px white;
+}
+
+.pricing-plans {
+  padding: 45px 0 156px;
+}
+
+.pricing-plans__intro {
   width: 721px;
-  margin: 100px auto 82px;
+  margin: 0 auto 82px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8936,10 +8990,10 @@ readers do not read off random characters that represent icons */
   text-align: center;
   text-align: center;
 }
-.pricing-plans-intro h2 {
+.pricing-plans__intro h2 {
   position: relative;
 }
-.pricing-plans-intro h2::after {
+.pricing-plans__intro h2::after {
   content: "";
   position: absolute;
   top: 0%;
@@ -8951,9 +9005,114 @@ readers do not read off random characters that represent icons */
   background-color: #7beec7;
   z-index: -1;
 }
-.pricing-plans-intro p {
+.pricing-plans__intro p {
   margin-top: 15px;
   line-height: 24px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 376px;
+  height: 50px;
+  border: 1px solid lightgray;
+  border-right: none;
+  margin: -4px;
+  font-family: "Montserrat", sans-serif;
+  color: #60606E;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 700;
+  padding: 0 20px;
+}
+
+input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #999999;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.stay-informed {
+  box-sizing: border-box;
+  width: 555px;
+  background-color: white;
+  padding: 18px 20px;
+}
+.stay-informed h3 {
+  padding-left: 5px;
+  line-height: 30px;
+}
+.stay-informed p {
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding-left: 4px;
+  color: #999999;
+  line-height: 22px;
+}
+
+.stay-informed__form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.get-in-touch {
+  background-color: #7beec7;
+  padding: 50px 0;
+}
+
+.work-together h2 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  margin: -12px 0 15px;
+  line-height: 48px;
+}
+
+.footer {
+  padding: 35px 0;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  color: #60606E;
+  font-size: 14px;
+  margin: 0;
+}
+
+.navigation__items {
+  list-style-type: none;
+  padding-left: 3px;
+}
+.navigation__items li {
+  cursor: pointer;
+  display: inline-block;
+}
+.navigation__items .dash {
+  padding: 0 15px;
+}
+
+.social-medias {
+  text-align: right;
+  margin-top: 9px;
+}
+.social-medias a {
+  text-decoration: none;
+  color: #60606E;
+  padding-left: 13px;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

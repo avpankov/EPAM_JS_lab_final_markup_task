@@ -1,0 +1,17 @@
+@import "../abstract/variables";
+@import "../components/form";
+
+.get-in-touch {
+    background-color: $color-brand;
+    padding: 50px 0;
+}
+
+.work-together {
+    
+    h2 {
+        @include headings ($headings-font, $color-additional, 30px);
+        margin: -12px 0 15px;
+        line-height: 48px;
+    }
+
+}

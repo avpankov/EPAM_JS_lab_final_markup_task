@@ -9,6 +9,7 @@
     font-family: $font-family;
     color: $color;
     font-size: $font-size;
+    font-weight: $font-weight;
     text-transform: uppercase;
     margin: 0;
 }
@@ -33,4 +34,15 @@
     >* {
         flex-basis: $width;
     }
+}
+
+@mixin intro {
+    width: 721px;
+    margin: 0 auto 82px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;
 }

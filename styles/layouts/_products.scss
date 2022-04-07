@@ -2,19 +2,18 @@
 @import "../abstract/variables";
 @import "../layouts/intro";
 @import "../components/list-icon";
+
 .products {
     padding: 45px 0;
 }
 
-.products-intro {
-    @include intro;
-
+.intro {
     h2 {
         position: relative;
     }
+
     h2::after {
         @include icon-rectangle;
-
     }  
 
     p {
@@ -23,7 +22,7 @@
     }
 }
 
-.advantages {
+.products__description {
     line-height: 30px;
 
     p {
@@ -31,6 +30,7 @@
     }
 }
 
-.column {
-    margin-top: 20px;
+.products__description__column {
+    margin-top: 27px;
+    line-height: 24px;
 }

@@ -2,6 +2,7 @@
 @import "../abstract/mixins";
 
 .price-tag {
+    box-sizing: border-box;
     width: 360px;
     height: 485px;
     position: relative;
@@ -30,7 +31,7 @@
 }
 
 .container {
-    padding: 30px;
+    padding: 25px 30px 27px;
 }
 
 .monthly-payment {
@@ -40,10 +41,10 @@
     padding: 7px 0;
     text-transform: uppercase;
     background-color: $color-brand;
-    margin-top: 17px;
+    margin-top: 12px;
 }
 
 .list-of-items {
-    margin: 45px 0;
-    line-height: 24px;
+    margin: 44px 0 48px;
+    line-height: 22px;
 }

@@ -1,0 +1,40 @@
+@import "../abstract/mixins";
+
+.footer {
+    padding: 35px 0;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-transform: uppercase;
+    @include text ($text-font, $color-text);
+}
+
+.navigation__items {
+    list-style-type: none;
+    padding-left: 3px;
+
+    li {
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .dash {
+        padding: 0 15px;
+    }
+}
+
+.social-medias {
+    text-align: right;
+    margin-top: 9px;
+    
+    a {
+        text-decoration: none;
+        color: $color-text;
+        padding-left: 13px;
+        font-size: 16px;
+    }
+}

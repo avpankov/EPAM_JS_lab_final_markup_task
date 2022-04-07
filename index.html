@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Services</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;@700&family=Open+Sans&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
     rel="stylesheet">
-    <script src="https://kit.fontawesome.com/74e7c74d87.js" crossorigin="anonymous"></script>
+    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 </head>
 
 <body>
 
     <header class="header">
         <div class="wrapper header__wrapper">
-            <a href="">AKAD.</a>
+            <a href="#">AKAD.</a>
             <div class="hamburger-menu"><img src="./images/icons/menu.png" alt="menu"></div>
         </div>
         <section class="promo">
@@ -33,14 +33,14 @@
 
     <section class="products">
         <div class="wrapper">
-            <div class="products-intro">
+            <div class="intro">
                 <h2>What we do</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et
                     dolore magna aliqua.</p>
             </div>
             <div class="layout-2-column">
-                <div class="advantages">
+                <div class="products__description">
                     <p>Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
                         lobortis
                         nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
@@ -49,14 +49,14 @@
                         accumsan.
                     </p>
                     <div class="layout-2-column">
-                        <div class="column">
-                            <p><i class="fas fa-solid fa-square-check"></i> Stunning on all screens</p>
+                        <div class="products__description__column">
+                            <p><i class="fa fa-solid fa-square-check"></i> Stunning on all screens</p>
                             <p><i class="fas fa-solid fa-square-check"></i> Easy to customize</p>
                             <p><i class="fas fa-solid fa-square-check"></i> Make a difference</p>
                             <p><i class="fas fa-solid fa-square-check"></i> Imagine and create</p>
                             <p><i class="fas fa-solid fa-square-check"></i> Unlimited possibilities</p>
                         </div>
-                        <div class="column">
+                        <div class="products__description__column">
                             <p><i class="fas fa-solid fa-square-check"></i> Remarkable style</p>
                             <p><i class="fas fa-solid fa-square-check"></i> Captivating presentations</p>
                             <p><i class="fas fa-solid fa-square-check"></i> Make your portfolio pop</p>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="what-we-do-image" src="./images/Layer_5.png" alt="what-we-do-image">
+                <img class="what-we-do-image" src="./images/pictures/Layer_5.png" alt="what-we-do-image">
             </div>
         </div>
     </section>
@@ -75,7 +75,7 @@
                 <div class="tool">
                     <div class="tool__icon">
                         <img src="./images/icons/pulse.png" alt="pulse">
-                        <span></span>
+                        <div class="icon"></div>
                     </div>
                     <h4>KEEP PULSE GOING</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
@@ -83,7 +83,7 @@
                 <div class="tool">
                     <div class="tool__icon">
                         <img src="./images/icons/infinity.png" alt="infinity">
-
+                        <div class="icon"></div>
                     </div>
                     <h4>PASS THE LIMITS</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
@@ -91,7 +91,7 @@
                 <div class="tool">
                     <div class="tool__icon">
                         <img src="./images/icons/bulb.png" alt="bulb">
-
+                        <div class="icon"></div>
                     </div>
                     <h4>GREAT IDEAS</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
@@ -99,7 +99,7 @@
                 <div class="tool">
                     <div class="tool__icon">
                         <img src="./images/icons/controllers.png" alt="controllers">
-
+                        <div class="icon"></div>
                     </div>
                     <h4>AWESOME SUPPORT</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
@@ -109,7 +109,7 @@
     </section>
     <section class="pricing-plans">
         <div class="wrapper">
-            <div class="pricing-plans-intro">
+            <div class="intro">
                 <h2>pricing plans</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et
@@ -180,12 +180,12 @@
                     <button class="button button_transparent">get in touch</button>
                 </div>
                 <div class="stay-informed">
-                    <h3>STAY INFORMED WITH OUR NEWSLETTER </h3>
+                    <h3>STAY INFORMED WITH OUR <br>NEWSLETTER </h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.</p>
                     <div class="stay-informed__form">
-                        <input type="email" name="" id="">
-                        <button class="button button_colored">get started</button>
+                        <input type="email" name="" id="" placeholder="YOUR EMAIL">
+                        <button class="button button_colored">send</button>
                     </div>
                 </div>
             </div>
@@ -193,17 +193,17 @@
     </section>
     <footer class="footer">
         <div class="wrapper">
-            <nav>
-                <ul class="navigation">
-                    <li>home</li>
-                    <li>about us</li>
-                    <li>services</li>
-                    <li>portfolio</li>
-                    <li>blog</li>
+            <nav class="navigation">
+                <ul class="navigation__items">
+                    <li>home</li> <span class="dash">-</span>
+                    <li>about us</li><span class="dash">-</span>
+                    <li>services</li><span class="dash">-</span>
+                    <li>portfolio</li><span class="dash">-</span>
+                    <li>blog</li><span class="dash">-</span>
                     <li>contact us</li>
                 </ul>
+                <p>Created by akhouad 2016. All Rights Reserved</p>
             </nav>
-            <p>Created by akhouad 2016. All Rights Reserved</p>
             <div class="social-medias">
                 <a href="">
                     <i class="fab fa-facebook-f"></i>

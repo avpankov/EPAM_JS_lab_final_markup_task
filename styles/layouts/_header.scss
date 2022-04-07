@@ -1,9 +1,11 @@
 @import "../abstract/mixins";
+@import "../components/hamburder-menu";
 
 .header {
-    background-image: url(../../images/Layer_4.png);
+    background-image: url(../../images/backgrounds/top.png);
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 101px;
 }
 
 .header__wrapper {
@@ -17,13 +19,6 @@
         @include text ($headings-font, $color-text, 18px);
         font-weight: 700;
         text-decoration: none;
-    }
-
-    .hamburger-menu {
-        
-        img {
-            margin-top: 5px;
-        }
     }
 }
 

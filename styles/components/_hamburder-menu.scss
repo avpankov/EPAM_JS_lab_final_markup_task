@@ -1,7 +1,14 @@
-.hamburger-menu {
+#hamburger-menu {
     cursor: pointer;
     
     img {
         margin-top: 5px;
+        transition: all .3s;
+    }
+}
+
+.hamburger-menu_rotate {
+    img {
+        transform: rotate(-90deg);
     }
 }

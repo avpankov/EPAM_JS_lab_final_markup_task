@@ -9,14 +9,23 @@ body {
 
 h1 {
     @include headings ($headings-font, $color-text, 36px, 700);
+    @include media-mobile-small {
+        @include headings ($headings-font, $color-text, 30px, 700); 
+    } 
 }
 
 h2 {
     @include headings ($headings-font, $color-text, 30px);
+    @include media-mobile-small {
+        @include headings ($headings-font, $color-text, 24px, 700); 
+    } 
 }
 
 h3 {
     @include headings ($headings-font, $color-text, 24px);
+    @include media-mobile-small {
+        @include headings ($headings-font, $color-text, 18px, 700); 
+    } 
 }
 
 h4 {

@@ -11,26 +11,52 @@
     justify-content: space-between;
     text-transform: uppercase;
     @include text ($text-font, $color-text);
+    @include media-tablet {
+        flex-direction: column;
+        align-items: center;
+    };
+    p {
+        @include media-mobile-small {
+            text-align: center;
+        };
+    }
 }
 
 .navigation__items {
     list-style-type: none;
     padding-left: 3px;
 
+    @include media-mobile-big {
+        text-align: center;
+    }
+
     li {
         cursor: pointer;
         display: inline-block;
+        @include media-mobile-big {
+            padding: 0 20px 20px 20px;
+        };
+        @include media-mobile-small {
+            padding: 0 10px 20px 10px;
+        }
     }
 
     .dash {
         padding: 0 15px;
+
+        @include media-mobile-big {
+            display: none;
+        }
     }
 }
 
 .social-medias {
     text-align: right;
     margin-top: 9px;
-    
+    @include media-tablet {
+        text-align: center;
+    }
+
     a {
         text-decoration: none;
         color: $color-text;

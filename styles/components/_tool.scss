@@ -5,6 +5,10 @@
     align-items: center;
     text-align: center;
 
+    @include media-mobile-big {
+        margin-bottom: 30px;
+    }
+
     h4 {
         margin-top: 23px;
     }

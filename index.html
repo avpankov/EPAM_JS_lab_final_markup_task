@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
     <script defer src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 </head>
 
@@ -19,7 +19,17 @@
     <header class="header">
         <div class="wrapper header__wrapper">
             <a href="#">AKAD.</a>
-            <div class="hamburger-menu"><img src="./images/icons/menu.png" alt="menu"></div>
+            <nav class="navigation">
+                <ul id="header__navigation__items">
+                    <li>home</li>
+                    <li>about us</li>
+                    <li>services</li>
+                    <li>portfolio</li>
+                    <li>blog</li>
+                    <li>contact us</li>
+                </ul>
+            </nav>
+            <div id="hamburger-menu"><img src="./images/icons/menu.png" alt="menu"></div>
         </div>
         <section class="promo">
             <div class="wrapper">
@@ -48,7 +58,7 @@
                         velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
                         accumsan.
                     </p>
-                    <div class="layout-2-column">
+                    <div class="products__description__columns layout-2-column">
                         <div class="products__description__column">
                             <p><i class="fa fa-solid fa-square-check"></i> Stunning on all screens</p>
                             <p><i class="fas fa-solid fa-square-check"></i> Easy to customize</p>
@@ -139,34 +149,34 @@
                     <div class="rec"></div>
                     <div class="triangle"></div>
                     <div class="container">
-                    <h2>ADVANCED </h2>
-                    <h5 class="monthly-payment">$55.99 Monthly</h5>
-                    <div class="list-of-items">
-                        <p><i class="fas fa-solid fa-square-check"></i>Lorem ipsum dolor sit amet</p>
-                        <p><i class="fas fa-solid fa-square-check"></i>Consectetur adipisicing elit</p>
-                        <p><i class="fas fa-solid fa-square-check"></i>Sed diam nonummy</p>
-                        <p><i class="fas fa-solid fa-square-check"></i>Nibh euismod tincidunt</p>
-                        <p><i class="fas fa-solid fa-square-check"></i>Ut laoreet dolore</p>
-                        <p><i class="fas fa-solid fa-square-check"></i>Magna aliquam erat volutpat</p>
+                        <h2>ADVANCED </h2>
+                        <h5 class="monthly-payment">$55.99 Monthly</h5>
+                        <div class="list-of-items">
+                            <p><i class="fas fa-solid fa-square-check"></i>Lorem ipsum dolor sit amet</p>
+                            <p><i class="fas fa-solid fa-square-check"></i>Consectetur adipisicing elit</p>
+                            <p><i class="fas fa-solid fa-square-check"></i>Sed diam nonummy</p>
+                            <p><i class="fas fa-solid fa-square-check"></i>Nibh euismod tincidunt</p>
+                            <p><i class="fas fa-solid fa-square-check"></i>Ut laoreet dolore</p>
+                            <p><i class="fas fa-solid fa-square-check"></i>Magna aliquam erat volutpat</p>
+                        </div>
+                        <button class="button button_colored">get started</button>
                     </div>
-                    <button class="button button_colored">get started</button>
-                </div>
                 </div>
                 <div class="price-tag">
                     <div class="rec"></div>
                     <div class="triangle"></div>
                     <div class="container">
-                    <h2>SMART </h2>
-                    <h5 class="monthly-payment">$75.99 Monthly</h5>
-                    <div class="list-of-items">
-                        <p><i class="fas fa-solid fa-square-check"></i>Lorem ipsum dolor sit amet</p>
-                        <p><i class="fas fa-solid fa-square-check"></i>Consectetur adipisicing elit</p>
-                        <p><i class="fas fa-solid fa-square-check"></i>Sed diam nonummy</p>
-                        <p><i class="fas fa-solid fa-square-check"></i>Nibh euismod tincidunt</p>
-                        <p><i class="fas fa-solid fa-square-check"></i>Ut laoreet dolore</p>
-                        <p><i class="fas fa-solid fa-square-check"></i>Magna aliquam erat volutpat</p>
-                    </div>
-                    <button class="button button_colored">get started</button>
+                        <h2>SMART </h2>
+                        <h5 class="monthly-payment">$75.99 Monthly</h5>
+                        <div class="list-of-items">
+                            <p><i class="fas fa-solid fa-square-check"></i>Lorem ipsum dolor sit amet</p>
+                            <p><i class="fas fa-solid fa-square-check"></i>Consectetur adipisicing elit</p>
+                            <p><i class="fas fa-solid fa-square-check"></i>Sed diam nonummy</p>
+                            <p><i class="fas fa-solid fa-square-check"></i>Nibh euismod tincidunt</p>
+                            <p><i class="fas fa-solid fa-square-check"></i>Ut laoreet dolore</p>
+                            <p><i class="fas fa-solid fa-square-check"></i>Magna aliquam erat volutpat</p>
+                        </div>
+                        <button class="button button_colored">get started</button>
                     </div>
                 </div>
             </div>
@@ -174,9 +184,9 @@
     </section>
     <section class="get-in-touch">
         <div class="wrapper">
-            <div class="layout-2-column">
+            <div class="get-in-touch__form layout-2-column">
                 <div class="work-together">
-                    <h2>YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h2>
+                    <h2>YOU THINK WE'RE COOL? LET'S WORK TOGETHER</h2>
                     <button class="button button_transparent">get in touch</button>
                 </div>
                 <div class="stay-informed">
@@ -195,7 +205,7 @@
         <div class="wrapper">
             <nav class="navigation">
                 <ul class="navigation__items">
-                    <li>home <span class="dash">-</span></li> 
+                    <li>home <span class="dash">-</span></li>
                     <li>about us <span class="dash">-</span></li>
                     <li>services <span class="dash">-</span></li>
                     <li>portfolio <span class="dash">-</span></li>
@@ -226,6 +236,7 @@
             </div>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>

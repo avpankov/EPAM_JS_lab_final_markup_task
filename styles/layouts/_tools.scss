@@ -3,4 +3,11 @@
 
 .tools {
     padding: 106px 0 94px;
+    @include media-tablet {
+        padding: 50px 0;
+    }
+
+    @include media-mobile-big {
+        padding: 20px 0;
+    }
 }

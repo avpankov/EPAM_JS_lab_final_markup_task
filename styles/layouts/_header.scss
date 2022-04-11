@@ -6,6 +6,9 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 101px;
+    @include media-tablet {
+        margin-bottom: 50px;
+    }
 }
 
 .header__wrapper {
@@ -16,9 +19,79 @@
     align-items: center;
 
     a {
-        @include text ($headings-font, $color-text, 18px);
+        @include text($headings-font, $color-text, 18px);
         font-weight: 700;
         text-decoration: none;
+    }
+
+    .navigation {
+        position: relative;
+        width: 800px;
+        #header__navigation__items {
+            position: absolute;
+            padding-left: 0px;
+            left: 0%;
+            margin: auto;
+            top: -10px;
+            opacity: 0;
+            @include media-tablet {
+                left: 6%;
+            };
+            @include media-mobile-big {
+                left: 15%;
+            };
+            @include media-mobile-small {
+                left: 3%;
+            }
+        }
+        .header__navigation__items_open {
+            @keyframes open {
+                from {
+                    opacity: 0;
+                    top: -35px;
+                }
+                to {
+                    opacity: 1;
+                    top: -10px;
+                }
+            }
+            animation: open .3s linear normal;
+        }
+
+        .header__navigation__items_close {
+            @keyframes close {
+                from {
+                    opacity: 1;
+                    top: -10px;
+                }
+                to {
+                    opacity: 0;
+                    top: -35px;
+                }
+            }
+            animation: close .3s normal;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 25px;
+            cursor: pointer;
+            @include media-tablet {
+                padding: 0 10px;
+            };
+            @include media-mobile-big {
+                width: 200px;
+                text-align: center;
+                padding: 30px 0;
+                background-color: $color-additional;
+            }
+            @include media-mobile-small {
+                width: 150px;
+                text-align: center;
+                padding: 30px 0;
+                background-color: $color-additional;
+            }
+        }
     }
 }
 
@@ -28,9 +101,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     p {
-        @include headings ($headings-font, $color-text, 14px);
+        @include headings($headings-font, $color-text, 14px);
         font-weight: 700;
         margin-top: 18px;
     }

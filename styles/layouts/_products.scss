@@ -1,5 +1,3 @@
-@import "../abstract/mixins";
-@import "../abstract/variables";
 @import "../layouts/intro";
 @import "../components/list-icon";
 
@@ -74,4 +72,8 @@ div.products__description__columns {
     @include media-mobile-small {
         margin-top: -15px;
     }
+}
+
+.what-we-do-image {
+    height: fit-content;
 }

@@ -1,8 +1,7 @@
-@import "../abstract/variables";
-
 .button {
     width: 136px;
     height: 50px;
+    margin-left: -1px !important;
     text-align: center;
     vertical-align: middle;
     background-color: $color-brand;

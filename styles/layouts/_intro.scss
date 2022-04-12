@@ -1,5 +1,6 @@
 .intro {
     @include intro;
+    
     @include media-tablet {
         width: auto;
         padding: 0 46px;

@@ -1,5 +1,3 @@
-@import "../abstract/mixins";
-
 .footer {
     padding: 35px 0;
 }
@@ -11,10 +9,12 @@
     justify-content: space-between;
     text-transform: uppercase;
     @include text ($text-font, $color-text);
+
     @include media-tablet {
         flex-direction: column;
         align-items: center;
     };
+
     p {
         @include media-mobile-small {
             text-align: center;
@@ -22,7 +22,7 @@
     }
 }
 
-.navigation__items {
+.footer__navigation {
     list-style-type: none;
     padding-left: 3px;
 
@@ -33,9 +33,11 @@
     li {
         cursor: pointer;
         display: inline-block;
+
         @include media-mobile-big {
             padding: 0 20px 20px 20px;
         };
+
         @include media-mobile-small {
             padding: 0 10px 20px 10px;
         }
@@ -53,6 +55,7 @@
 .social-medias {
     text-align: right;
     margin-top: 9px;
+    
     @include media-tablet {
         text-align: center;
     }

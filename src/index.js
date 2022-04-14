@@ -1,5 +1,3 @@
-import './sass/main.scss';
-
 let menu = document.getElementById('hamburger-menu');
 let nav = document.getElementById('header__navigation');
 

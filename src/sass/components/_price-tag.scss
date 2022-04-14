@@ -5,7 +5,10 @@
     transition: all .3s;
 
     @include media-tablet {
-        width: 200px;
+        width: 285px;
+        margin-bottom: 30px;
+        box-shadow: 0 0 20px $color-shadow;
+
         h2 {
             font-size: 24px;
         }
@@ -49,7 +52,7 @@
     box-shadow: 0 0 50px $color-shadow;
     transform: scale(1.02);
 
-    @include media-mobile-big {
+    @include media-tablet {
         transform: none;
         box-shadow: 0 0 20px $color-shadow;
     }

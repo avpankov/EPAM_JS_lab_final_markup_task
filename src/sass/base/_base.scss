@@ -5,6 +5,7 @@ body {
 }
 
 h1 {
+    text-align: center;
     @include headings ($headings-font, $color-text, 36px, 700);
 
     @include media-mobile-small {

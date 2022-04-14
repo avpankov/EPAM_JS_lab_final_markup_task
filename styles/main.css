@@ -612,6 +612,7 @@ h5 {
   margin: auto;
   top: -10px;
   opacity: 0;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .header__wrapper .navigation #header__navigation {
@@ -8982,6 +8983,7 @@ readers do not read off random characters that represent icons */
 .products__description__column {
   margin-top: 27px;
   line-height: 24px;
+  text-align: left;
 }
 @media (max-width: 768px) {
   .products__description__column {

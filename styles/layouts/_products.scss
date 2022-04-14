@@ -52,6 +52,7 @@ div.products__description__columns {
 .products__description__column {
     margin-top: 27px;
     line-height: 24px;
+    text-align: left;
 
     @include media-tablet {
         margin-bottom: 20px;

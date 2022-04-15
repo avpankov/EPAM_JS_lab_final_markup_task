@@ -2,29 +2,24 @@ const webpack = require('webpack');
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = (env, options) => {
     const isProduction = options.mode === 'production';
 
     const config = {
         mode: isProduction ? 'production' : 'development',
-        devtool: isProduction ? 'none' : 'source-map',
+        devtool: isProduction ? false : 'source-map',
         watch: !isProduction,
         entry: ['./src/index.js', './src/sass/main.scss'],
         output: {
             filename: 'main.js',
             path: path.join(__dirname, '/dist'),
         },
-        plugins: [
-            new CleanWebpackPlugin(),
-            new HtmlWebpackPlugin({
-                template: 'index.html'
-            }),
-            new MiniCssExtractPlugin({
-                filename: 'style.css'
-            })
-        ],
+        resolve: {
+            alias: {
+              img: path.resolve(__dirname, 'src/images/backgrounds'),
+            },
+          },
         module: {
             rules: [
                 {
@@ -39,23 +34,16 @@ module.exports = (env, options) => {
                 },
                 {
                     test: /\.scss$/,
-                    use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'
-                    ]
+                    use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
                 },
-                {
-                    test: /\.(png|jpe?g)$/,
-                    use: [
-                        {
-                            loader: 'file-loader'
-                        },
-                    ],
-                },
-                {
-                    test: /\.html$/,
-                    loader: "html-loader",
-                  },
             ]
-        }
+        },
+        plugins: [
+            new CleanWebpackPlugin(),
+            new MiniCssExtractPlugin({
+                filename: 'style.css'
+            })
+        ],
     }
     return config;
 };

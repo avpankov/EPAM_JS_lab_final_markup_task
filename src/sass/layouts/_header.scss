@@ -1,0 +1,100 @@
+@import "../components/hamburder-menu";
+
+.header {
+    background-image: url(~img/top.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 101px;
+
+    @include media-tablet {
+        margin-bottom: 50px;
+    }
+}
+
+.header__wrapper {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        @include text($headings-font, $color-text, 18px);
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .navigation {
+        position: relative;
+        width: 800px;
+
+        #header__navigation {
+            position: absolute;
+            padding-left: 0px;
+            left: 0%;
+            margin: auto;
+            top: -10px;
+            opacity: 0;
+            text-align: center;
+
+            @include media-tablet {
+                left: 6%;
+            };
+
+            @include media-mobile-big {
+                left: 15%;
+            };
+
+            @include media-mobile-small {
+                left: 3%;
+            }
+        }
+
+        .header__navigation_open {
+            animation: open .3s linear normal;
+        }
+
+        .header__navigation_close {
+            animation: close .3s normal;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 25px 20px;
+            cursor: pointer;
+
+            @include media-tablet {
+                padding: 20px;
+                text-align: center;
+            };
+
+            @include media-mobile-big {
+                width: 200px;
+                text-align: center;
+                padding: 30px 0;
+                background-color: $color-additional;
+            };
+
+            @include media-mobile-small {
+                width: 150px;
+                text-align: center;
+                padding: 30px 0;
+                background-color: $color-additional;
+            }
+        }
+    }
+}
+
+.promo__content {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        @include headings($headings-font, $color-text, 14px);
+        font-weight: 700;
+        margin-top: 18px;
+    }
+}

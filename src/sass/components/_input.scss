@@ -1,0 +1,19 @@
+input {
+    box-sizing: border-box;
+    width: 376px;
+    height: 50px;
+    border: 1px solid $color-shadow;
+    margin: -4px;
+    @include headings ($headings-font, $color-text, 14px);
+    font-weight: 700;
+    padding: 0 20px;
+    
+    @include media-mobile-small {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+input::placeholder {
+    @include headings ($headings-font, $color-text-additional, 14px);
+}

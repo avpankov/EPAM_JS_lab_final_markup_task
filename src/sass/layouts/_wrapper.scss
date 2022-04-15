@@ -1,0 +1,9 @@
+.wrapper {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 46px;
+
+    @include media-mobile-big {
+        padding: 0 30px;
+    }
+}

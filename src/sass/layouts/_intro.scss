@@ -1,0 +1,13 @@
+.intro {
+    @include intro;
+    
+    @include media-tablet {
+        width: auto;
+        padding: 0 46px;
+        margin-bottom: 50px;
+    }
+    @include media-mobile-small {
+        padding: 0 10px;
+        margin-bottom: 40px;
+    } 
+}

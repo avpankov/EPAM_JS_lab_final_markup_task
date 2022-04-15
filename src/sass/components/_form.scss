@@ -1,0 +1,45 @@
+@import "./input";
+
+.stay-informed {
+    box-sizing: border-box;
+    width: 555px;
+    background-color: $color-additional;
+    padding: 18px 20px;
+
+    @include media-mobile-big {
+        width: 100%;
+    }
+
+    h3 {
+        padding-left: 5px;
+        line-height: 30px;
+
+        br {
+            @include media-mobile-small {
+                display: none;
+            }
+        }
+    }
+
+    p {
+        font-size: 16px;
+        margin: 10px 0 30px;
+        padding-left: 4px;
+        color: $color-text-additional;
+        line-height: 22px;
+    }
+}
+
+.stay-informed__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @include media-mobile-big {
+        flex-wrap: nowrap;
+    }
+
+    @include media-mobile-small {
+        flex-wrap: wrap;
+    }
+}

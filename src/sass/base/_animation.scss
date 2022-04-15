@@ -1,0 +1,22 @@
+@keyframes open {
+    from {
+        opacity: 0;
+        top: -35px;
+    }
+    to {
+        opacity: 1;
+        top: -10px;
+    }
+}
+
+@keyframes close {
+    from {
+        opacity: 1;
+        top: -10px;
+    }
+    to {
+        opacity: 0;
+        top: -35px;
+    }
+}
+

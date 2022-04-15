@@ -1,0 +1,17 @@
+.tool__icon {
+    width: 67px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    .icon {
+        @include icon-rectangle;
+        width: 51px;
+        height: 21px;
+        top: 55%;
+        left: -3%;
+        transform: translate(0, 0);
+    }
+}

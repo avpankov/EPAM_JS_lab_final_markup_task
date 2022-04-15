@@ -1,0 +1,90 @@
+.price-tag {
+    box-sizing: border-box;
+    width: 360px;
+    position: relative;
+    transition: all .3s;
+
+    @include media-tablet {
+        width: 285px;
+        margin-bottom: 30px;
+        box-shadow: 0 0 20px $color-shadow;
+
+        h2 {
+            font-size: 24px;
+        }
+        h5 {
+            font-size: 12px;
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+
+    @include media-mobile-big {
+        margin-bottom: 30px;
+        box-shadow: 0 0 20px $color-shadow;
+        h5 {
+            font-size: 14px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .rec {
+        width: 100%;
+        height: 6px;
+        background-color: $color-brand;
+    }
+
+    .triangle {
+        position: absolute;
+        top: 6px;
+        left: calc(100% - 16px);
+        width: 16px;
+        height: 16px;
+        background-color: $color-brand;
+        background: linear-gradient(45deg, transparent 15px, $color-brand 0);
+    }
+}
+
+.price-tag:hover {
+    box-shadow: 0 0 50px $color-shadow;
+    transform: scale(1.02);
+
+    @include media-tablet {
+        transform: none;
+        box-shadow: 0 0 20px $color-shadow;
+    }
+}
+
+.container {
+    padding: 25px 30px 27px;
+}
+
+.monthly-payment {
+    display: inline-block;
+    width: 165px;
+    text-align: center;
+    padding: 7px 0;
+    text-transform: uppercase;
+    background-color: $color-brand;
+    margin-top: 12px;
+
+    @include media-tablet {
+        width: 130px;
+    }
+
+    @include media-mobile-big {
+        width: 145px;
+    }
+}
+
+.list-of-items {
+    margin: 44px 0 48px;
+    line-height: 22px;
+    
+    @include media-tablet {
+        margin: 20px 0;
+    }
+}

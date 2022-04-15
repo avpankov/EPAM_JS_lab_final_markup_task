@@ -1,0 +1,42 @@
+@import "./../abstract/mixins";
+
+.layout-2-column {
+    @include columns ($width: 48.5%);
+    
+    @include media-tablet {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+}
+
+.layout-4-column {
+    @include columns ($width: 23%);
+    
+    @include media-mobile-big {
+        @include columns ($width: 48.5%);
+        flex-wrap: wrap;
+    }
+}
+
+.layout-3-column {
+    @include columns ($width: 31.5%);
+
+    @include media-tablet {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+
+    @include media-mobile-big {
+        @include columns ($width: 70%);
+        justify-content: center;
+        flex-wrap: wrap;
+    };
+
+    @include media-mobile-small {
+        @include columns ($width: 100%);
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
